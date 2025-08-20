@@ -31,15 +31,9 @@ struct ContentView: View {
                     .opacity(0.8)
                     .foregroundColor(.white)
                 Divider()
-                RoundedRectangle(cornerRadius: 30)
-                    .fill(Color.white)
-                    .frame(width: 250, height: 50)
-                    .overlay(Text("+1 123 456 7890")
-                        .foregroundColor(.black))
-                    .font(.system(size: 20))
-                Text("lidiiadevs@gmail.com")
+                InfoView(text: "+1 123 456 7890", imageName: "phone.fill")
+                InfoView(text: "lidiiadevs@gmail.com", imageName: "envelope.fill")
             }
-            
         }
     }
 }
@@ -47,3 +41,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
